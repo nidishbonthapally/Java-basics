@@ -34,7 +34,7 @@ public class Vehicle {
     }
 
     public void accelerate(int speed){
-        if(speed>0){
+        if(this.speed>0){
             System.out.println("The vehicle is accelerating...... at " + speed + " km/ph");
         }else {
             System.out.println("The vehicle is at stop or going reverse......");

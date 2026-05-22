@@ -1,15 +1,21 @@
 public class Phone {
     String brand;
     double version;
-    int battery_level;
+    int batteryLevel;
+
+    Phone(String brand, double version, int batteryLevel){
+        this.brand = brand;
+        this.version = version;
+        this.batteryLevel = batteryLevel;
+    }
 
     void charge(){
-        battery_level = battery_level + 20;
-        System.out.println(brand + " is charging at " + battery_level +"% battery level");
+        batteryLevel = batteryLevel + 20;
+        System.out.println(brand + " is charging at " + batteryLevel +"% battery level");
     }
 
     void use(){
-        battery_level = battery_level - 10;
-        System.out.println(brand + " is being used at " + battery_level +"% battery level");
+        batteryLevel = batteryLevel - 10;
+        System.out.println(brand + " is being used at " + batteryLevel +"% battery level");
     }
 }
